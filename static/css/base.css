@@ -38,6 +38,18 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -57,22 +69,22 @@ body {
 }
 
 .bg-black {
-    background: #000 !important; 
+    background: #000 !important;
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529;
-    color: #fff;
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 .btt-button {
@@ -85,6 +97,7 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+
 
 /* -------------------------------- Media Queries */
 
@@ -111,8 +124,7 @@ a.category-badge > span.badge:hover {
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
-
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
